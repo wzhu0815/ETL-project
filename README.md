@@ -1,6 +1,6 @@
 # ETL-project Technical Report
 
-## ETL Project: Flight Delays and Cancellations
+## Flight Delays and Cancellations
 
 Group members: Wei Zhu , Irene Okada
 
@@ -32,7 +32,17 @@ The files were cleaned, and fields prioritized based on hypothetical questions w
 - _Delayed flight data_: includes the code and cause of delay, original origin/destination, flight length,date among other potentially useful information
 
 **Loading**:
-We then created a connection between Jupyter Notebooks and Mongo dB to export Data Frames and create a database with multiple collections, ready for use in queries and analysis.
-Diagram for sql
+We then created a connection between Jupyter Notebooks and Postgres to export Data Frames and create a database. Since our data was already in .csv format we expected this could be efficient and save space. For practice and potential flexibility (and because it was easy) we also created a Mongodb with multiple collections, ready for use in queries and analysis.
 
+_Diagrams for sql_
 ![database diagram](./QuickDBD-Free-Diagram.png)
+
+_Screenshot of sql query for delay table in SQL_
+![database diagram](Screenshot/samplesqldelay.png)
+
+_Screenshot of cancel flight collection in MongoDB_
+![database diagram](Screenshot/samplemongocolcancel.png)
+
+### Lessons Learned:
+
+Understand that some databases are very large and that due to storage limitations on projects, sampling methodologies may be considered. In this case it was more efficient for us to use a sample to test our code.
