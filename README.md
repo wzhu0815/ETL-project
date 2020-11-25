@@ -25,7 +25,7 @@ https://en.wikipedia.org/wiki/List_of_airports_in_the_United_States
 
 • **\*Delayed flight data**: includes the code and cause of delay, original origin/destination, flight length,date among other potentially useful information
 
-![Diagram](./QuickDBD-Free Diagram.png)
+![Diagram](QuickDBD-Free Diagram.png?raw=true "Title")
 
 **\*Workflow was as follows**:
 
