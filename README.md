@@ -31,7 +31,9 @@ https://en.wikipedia.org/wiki/List_of_airports_in_the_United_States
 
 **Extract/Data Utilized**
 Data files (csv and webpage) were read into Jupyter notebooks using pandas.
+
 **Transformation**:
 The files were cleaned, and fields prioritized based on hypothetical questions we would want to answer. Some columns were dropped, some renamed, some split and the datatype was changed on some to facilitate ultimate creation of a database in SQL. Transforming the data accommodated ease of reading and manipulation of the files and allows us to save space by creating multiple tables that can be referenced or joined depending on the need and question to be answered.
+
 **Loading**:
 We then created a connection between Jupyter Notebooks and Mongo dB to export Data Frames and create a database with multiple collections, ready for use in queries and analysis.
